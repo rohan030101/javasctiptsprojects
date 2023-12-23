@@ -9,7 +9,8 @@ var btns= document.querySelectorAll(".btn");
 
 btns.forEach(function (btn){
     btn.addEventListener('click' ,function(e){
-        const style = e.currentTarget.
+        const style = e.currentTarget.classList;
+        console.log(style);
     })
 });
 
