@@ -10,12 +10,13 @@ body{
 }
 h1{
     font-size: 2.6rem;
-    text-align:left;
+    text-align:center;
 }
 button{
     margin: 6px 0px;
     padding: 6px 8px;
     overflow-wrap: normal;
+    cursor: pointer;
 }
 p{
     margin: 2px 0;
@@ -26,17 +27,17 @@ p{
     padding: 8px 0;
 }
 .reviewpanel{
+    text-align: center;
     margin:10px;
-    padding: 2vh 2vw;
-    height:50%;
+    padding: 6vh 2vw;
+    height:57%;
     width: 20%;
-    border-radius: 10px;
-    overflow: inherit;
+    border-radius: 10px;    
     background-color:antiquewhite;
 }
 img{
-    height: 15vh;
-    width: 15vh;
-    border-radius: 200px;
-    margin:auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 500px;
+    margin: 0 auto;
 }
