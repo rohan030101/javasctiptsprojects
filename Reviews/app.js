@@ -27,4 +27,20 @@ const reviews = [
   },
 ];
 
-console.log(reviews);
+// console.log(reviews);
+
+var leftbtn = document.getElementById("left-btn");
+var rightbtn = document.getElementById("right-btn");
+var randombtn = document.getElementById("random-btn");
+
+let currentitem = 0;
+
+rightbtn.addEventListener("click", function () {
+  currentitem++;
+  if(currentitem > reviews.length -1){
+   currentitem = 0;
+  }
+  var person = reviews[currentitem];
+  console.log(person.name); 
+  console.log("right button clicked ");
+});
