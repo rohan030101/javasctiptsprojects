@@ -1,5 +1,5 @@
 console.log('Scripted Loaded');
-
+var count= 0;
 var value = document.querySelector('#value');
 // console.log(value.textContent);
 
@@ -10,7 +10,25 @@ var btns= document.querySelectorAll(".btn");
 btns.forEach(function (btn){
     btn.addEventListener('click' ,function(e){
         const style = e.currentTarget.classList;
-        console.log(style);
+        
+        if(style.contains('increase')){
+            count++;
+            console.log(count)
+        }
+        else if(style.contains('decrease')){
+            count--;
+            console.log(count)
+            if(count<0){
+                count = 0;
+                // value.textContent=0;
+            }
+        }
+        else{    
+            count = 0;
+            console.log(count)
+        
+        }
+        value.textContent = count;
     })
 });
 
